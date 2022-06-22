@@ -1,0 +1,1060 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+/* >5> inicio formulario */
+.form-body {
+    background: linear-gradient(45deg, #191E69, #5D2F79, #5B2B76);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  main.container {
+    background: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 7%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  main h2 {
+    margin-top: -7%;
+    font-weight: 600;
+    margin-bottom: 2%;
+    position: relative;
+  
+  }
+  h4{
+    margin-bottom: 15%;
+    margin-left: 3%;
+    font-weight: 500;
+
+  }
+  
+  main h2::before {
+  
+    position: absolute;
+    height: 884px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-caixa {
+    position: relative;
+  
+  }
+  
+  .input-caixa .border-bottom::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-caixa .border-bottom::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+  }
+  
+  .input-caixa .input-form:focus~.border-bottom::after {
+    transform: scaleX(1);
+  }
+  
+  .input-caixa .input-form {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+  }
+  
+  .input-caixa .input-form::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  form .input-form[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  
+  }
+  
+  form .input-form[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #4776E6, #8e54e9);
+  }
+  /* pagi help */
+  
+  .help-body {
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding-top: 10%;
+  }
+  
+  .quadrado {
+  
+  
+    animation: go-back 5s infinite alternate-reverse;
+  
+  
+  }
+  
+  .quadrado, .button-help {
+    display: inline-flex;
+    margin-top: 20%;
+    padding: 30px;
+    border-radius: 100%;
+  
+  }
+  
+  .button-help {
+    background-color: rgb(247, 0, 0);
+  }
+  
+  .help-p {
+    margin-right: -9%;
+    margin-top: -20%;
+    color: rgb(86, 0, 0);
+    font-size: 1500%;
+  }
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(600px);
+    }
+  
+    to {
+      transform: translateX(-600px);
+    }
+  
+    70% {
+      opacity: 0.;
+    }
+  
+    70% {
+      opacity: 0;
+    }
+  
+    0% {
+      opacity: 0.;
+    }
+  }
+  
+  /* começo do jogo cada pagina altera os números ex: pag2, pag3, pag4 e assim por diante */
+  .pag2-body {
+    background: url(gifs/pag2.gif);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-size: 100%;
+    /* essa é a ultima pag fazer ajuste */
+  }
+  
+  .pag3-body {
+    background: url(gifs/pag3.1.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000000;
+  
+  
+  }
+  
+  .img-pag3 {
+    margin-left: 20%;
+    width: 10%;
+    height: 5%;
+  }
+  
+  .pag4-body {
+    background: url(gifs/pag4.gif);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-position: top;
+    background-size: 50%;
+  
+  }
+  
+  .pag4-img-1 {
+    margin-left: -1%;
+    width: 25%;
+    height: 50%;
+  }
+  
+  .pag4-img-2 {
+    margin-top: 7%;
+    width: 10%;
+    margin-left: 60%;
+  }
+  
+  .pag4-img-3 {
+    width: 20%;
+    height: 10%;
+  }
+  
+  .p-pag4 {
+    margin-left: 5%;
+    font-size: 90px;
+    padding-top: 5%;
+    color: rgb(2, 2, 2);
+  }
+  
+  .pag5-body {
+    background: url(gifs/pag5.gif);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-size: 110%;
+  
+  }
+  
+  .button-pag5 {
+    margin-top: 19%;
+    margin-left: 50%;
+    background-color: rgba(202, 0, 158, 0.232);
+    padding-right: 6%;
+    padding-top: 5%;
+    border: none;
+    border-left: 1px solid rgb(251, 0, 163);
+  }
+  
+  .pag5-img {
+    margin-right: 50%;
+    margin-top: -20%;
+    width: 40%;
+  }
+  
+  .pag6-body {
+    background: url(gifs/pag6.gif);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-size: 100%;
+  
+  }
+  
+  .p2-pag6 {
+    margin-top: 6%;
+    margin-left: 16%;
+    font-size: 250%;
+    color: rgb(0, 48, 207);
+  }
+  
+  .p-pag6 {
+    margin-top: 6%;
+    margin-left: 30%;
+    font-size: 250%;
+    color: #ff00e1;
+  
+  }
+  
+  .img-pag6 {
+    margin-left: 75%;
+    width: 25%;
+    height: 30%;
+    margin-top: -10%;
+  }
+  
+  .pag7-body {
+    background: url(gifs/pag7.gif);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-size: 100%;
+  }
+  
+  .pag7-p {
+    font-size: 20px;
+    margin-top: 25%;
+    color: rgba(0, 0, 0, 0.327);
+    margin-left: 5%;
+  }
+  
+  .img-pag7 {
+    margin-left: 90%;
+    margin-top: 13%;
+    width: 5%;
+    height: 2%;
+  }
+  
+  .pag8-body {
+    background: url(img/pag8.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-size: 100%;
+  }
+  
+  .img-pag8 {
+    margin-left: 50%;
+    padding-top: 15%;
+    width: 15%;
+    height: 10%;
+  }
+  
+  .pag9-body {
+    background: url(gifs/sapiens-pag9.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: rgb(121, 0, 132);
+    background-size: 50%;
+  
+  }
+  
+  .pag9-p {
+    margin-left: 5%;
+    margin-top: 20%;
+    font-size: 110%;
+    color: #9500ff46;
+  }
+  
+  .pag10-body {
+    background: url(img/pag10.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: rgb(34, 0, 89);
+    background-size: 40%;
+  }
+  
+  .pag10-p2 {
+    margin-left: 80%;
+    margin-top: 20%;
+    color: rgba(38, 0, 98, 0.822);
+  }
+  
+  .pag10-p {
+    margin-right: 80%;
+    margin-left: 5%;
+    color: rgb(53, 0, 138);
+  }
+  
+  .pag11-body {
+    background: url(gifs/nadiagonal-pag11.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: rgb(0, 0, 0);
+    background-size: 40%;
+    margin-top: 5%;
+  }
+  
+  .pag11-p {
+    color: rgba(13, 12, 12, 0.292);
+    margin-left: 46%;
+    margin-top: 40%;
+  }
+  
+  .pag12-body {
+    background: url(gifs/pag12.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: rgb(0, 0, 0);
+    background-size: 110%;
+  }
+  
+  .pag12-p2 {
+    margin-left: 50%;
+    font-size: 180%;
+    margin-top: -51%;
+  }
+  
+  .pag12-p {
+    padding-top: 60%;
+    font-size: 150%;
+    margin-left: 2%;
+  }
+  
+  .pag13-body {
+    background: url(gifs/classica-pag13.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #1D1F1C;
+    background-size: 60%;
+  }
+  
+  .pag13-p {
+    margin-left: 5%;
+    font-size: 200%;
+    color: #31333071;
+  }
+  
+  .pag14-body {
+    background: url(gifs/pag14.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #430e70;
+    background-size: 100% 800px;
+  }
+  
+  .button-pag14 {
+    margin-left: 76%;
+    margin-top: 19%;
+    background-color: #0b0b0b7f;
+    border: none;
+    padding: 8px;
+  }
+  
+  .pag14-p {
+    margin-top: -5%;
+    color: #320471;
+    font-size: 20px;
+    margin-left: 2%;
+  }
+  
+  .pag15-body {
+    background: url(gifs/pag15.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #430e70;
+    background-size: 100%;
+  }
+  
+  .pag15-p {
+    margin-top: 1%;
+    margin-left: 4%;
+    font-size: 180%;
+    color: #00eaf2;
+  }
+  
+  .pag15-p2 {
+    padding-top: 37%;
+    margin-left: 1%;
+    margin-top: -3%;
+    margin-bottom: -10%;
+  }
+  
+  .img-pag15-2 {
+    margin-left: 75%;
+    margin-top: 1%;
+    height: 10%;
+    width: 10%;
+  }
+  
+  .img-pag15-1 {
+    margin-left: 40%;
+    margin-top: 0%;
+    height: 10%;
+    width: 15%;
+  }
+  
+  .pag16-body {
+    background: url(img/pag16.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #430e70;
+    background-size: 100% 700px;
+  }
+  
+  .pag16-p {
+    margin-left: 40%;
+    margin-top: 22%;
+    color: #f5f5f5;
+    font-size: 150%;
+  }
+  
+  .pag16-p2 {
+    margin-top: 20%;
+    color: #3104716d;
+  }
+  
+  .pag17-body {
+    background: url(gifs/municipio-pag17.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #000000;
+    background-size: 100% 600px;
+  
+  }
+  
+  .pag17-p {
+    font-size: 150%;
+    margin-top: 45%;
+    margin-left: 30%;
+    color: #000000;
+  }
+  
+  .pag18-body {
+    background: url(gifs/pag18.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #000000;
+    background-size: 100% 700px;
+  
+  }
+  
+  .button-pag18 {
+    margin-left: 39%;
+    margin-top: 27%;
+  
+  }
+  
+  .buttons-pag18 {
+    margin-left: 20%;
+    border: none;
+    padding: 10px;
+    padding-right: 8%;
+    background-color: #ff07c1;
+  }
+  
+  .buttons-pag18-1 {
+    border: none;
+    padding: 10px;
+    padding-right: 6%;
+    background-color: rgb(255, 0, 170);
+  }
+  
+  .buttons-pag18-2 {
+    margin-top: 18%;
+    border: solid 5px #02342e;
+    padding: 10px;
+    padding-right: 6%;
+    background-color: rgba(40, 33, 38, 0);
+  }
+  
+  .p-pag18 {
+    color: #f5f5f5a5;
+    font-size: 100px;
+    margin-top: -40%;
+    margin-left: 35%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .pag19-body {
+    background: url(gifs/pag19.gif);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #000000;
+    background-size: 100%;
+  }
+  
+  .pag19-p {
+    margin-top: 32%;
+    margin-left: 35%;
+    color: #717171;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+  }
+  .pag20{
+  text-align: center;
+background-color: #000000;
+display: inline;
+margin-left: 30%;
+font-size: 300%;
+  }
+  .img-pag20{
+    width:5%;
+    margin-top: 35%;
+    margin-left: 60%;
+  }
+  .pag-21{
+    background-color: #000000;
+     color: white;
+  }
+  .p1-21{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 200%;
+    
+  }
+  .p2-21{
+    text-align: right;
+    margin-top: 10%;
+    padding-right: 1%;
+    color: #bbbbbb;
+    font-size: 90%;
+  }
+  .p3-21{
+    margin-top: -29%;
+    padding-left: 1%;
+    color: #ababab;
+  }
+  .pag21-img{
+    margin-top: 0;
+    padding-left: 8%;
+  }
+  .p4-21{
+    margin-top: 31%;
+    padding-left: 2%;
+    font-size: 150%;
+    color:#ababab;
+  }
+  
+  @media screen and (max-width: 320px) {
+    body {
+      background-color: #f1f1f1;
+    }
+  
+    img {
+      width: 280px;
+      height: 100px;
+      margin-left: 3%;
+  
+    }
+  
+  
+    h1 {
+      margin-top: 40%;
+      font-size: 160%;
+  
+  
+    }
+  
+    nav {
+  
+      margin-top: -40%;
+      margin-left: -8%;
+      margin-bottom: -10%;
+      padding-left: -15px;
+      width: 200%;
+  
+    }
+  
+    nav a {
+      font-size: 10px;
+      padding: 10px 10px;
+  
+  
+  
+    }
+  
+    .active {
+  
+      padding-right: 25%;
+    }
+  
+    .linkspag1 {
+      font-size: 100%;
+      margin-bottom: 5%;
+    }
+  
+    .pag1-h1 p {
+      font-size: 100%;
+  
+    }
+  
+    /* loja */
+    .menu-loja nav {
+      margin-top: -25%;
+      margin-left: -8%;
+      position: fixed;
+    }
+  
+  
+    .h2-loja {
+      margin-top: 25%;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+  
+    .vitrine-loja-1, .vitrine-loja-02, .vitrine-loja-3 {
+      margin-top: 2%;
+      margin-left: 15%;
+  
+    }
+  
+    .vitrine-loja-4 {
+      margin-left: 15%;
+      width: 77%;
+    }
+  
+    .suporte-menu nav {
+      margin-top: -3%;
+      margin-left: -8%;
+    }
+  
+    .suporte-h2 {
+      padding-top: 15%;
+      padding-bottom: 13%;
+      margin-left: -4%;
+      font-size: 200%;
+      margin-right: 0px;
+    }
+  
+    .suporte-container {
+      margin-top: 3%;
+      padding-bottom: 10%;
+      color: rgba(0, 0, 0, 0.842);
+      font-size: 80%;
+  
+    }
+  
+    .p-suporte-2 {
+      border-left: none;
+      margin-top: 15%;
+      margin-left: -5px;
+      font-size: 100%;
+  
+    }
+  
+    .p-suporte-2 h3 {
+      margin-left: 2%;
+      font-size: 120%;
+    }
+  
+    /* pagina saiba mais */
+    .body-saibamais {
+  
+      background-position: 90% 16%;
+      ;
+      background-size: 40%;
+  
+    }
+  
+    .saibamais-menu nav {
+      margin-top: -13%;
+      margin-left: -10%;
+      padding-left: -5%;
+    }
+  
+  
+    .saibamais-caixa {
+      margin-top: 10%;
+      margin-left: -30%;
+  
+    }
+  
+    .saibamais-caixa .saiba-mais-h2 {
+      margin-top: 10%;
+      margin-left: 36%;
+      font-size: 160%;
+    }
+  
+    .saibamais-caixa h2 {
+  
+      margin-left: 38%;
+      font-size: 100%;
+      font-weight: 550;
+      margin-bottom: 2%;
+      color: #2a2a2c;
+    }
+  
+    .saibamais-caixa .h2-2 {
+      margin-left: 32%;
+    }
+  
+    .saibamais-caixa p {
+      padding-right: 10%;
+      padding-left: 15%;
+      text-align: left;
+      font-weight: 500;
+      font-size: 90%;
+      margin-left: 15%;
+  
+    }
+  
+    .saibamais-caixa2 {
+      width: 100%;
+      height: 400px;
+      margin-top: 55%;
+      margin-left: 0;
+    }
+  
+    .texto-saibamais {
+      padding-top: 15%;
+      line-height: 20px;
+      margin-left: 10%;
+      padding-right: 30%;
+      font-size: 110%;
+    }
+  
+    .saibamais-img2 {
+      margin-top: 16%;
+      width: 40%;
+      height: 30%;
+      margin-left: 33%;
+    }
+  
+    .p-1saibamais p {
+      margin-top: -25%;
+      margin-left: 2%;
+      font-size: 100%;
+    }
+  
+    .p-1saibamais .pol-saibamais {
+      margin-left: 16%;
+      margin-top: 2%;
+  
+    }
+  
+    .p-2saibamais {
+      margin-top: -14%;
+      margin-right: 5%;
+      font-size: 100%;
+    }
+  
+    .p-2saibamais .pol-2saibamais {
+      margin-right: 5%;
+      margin-top: 2%;
+    }
+  
+    .tb {
+      margin-top: 25%;
+  
+    }
+  
+    .tb p {
+      margin-left: 10%;
+      margin-bottom: 1%;
+      font-size: 200%;
+    }
+  
+    .tb .ptb {
+      font-size: 1000%;
+      font-weight: 500;
+      text-align: center;
+      margin-top: -10%;
+      margin-left: -10%;
+    }
+  
+    .tb .ptb2 {
+      font-size: 100%;
+      font-weight: 900;
+      margin-top: -8%;
+      margin-left: 45%;
+      padding-right: 25%;
+      color: #1e1e1f;
+    }
+  
+    .processador {
+  
+      width: 125%;
+      height: 10%;
+      padding-top: 2%;
+      margin-left: -25%;
+    }
+  
+    .processador h2 {
+      margin-right: 10%;
+      padding-top: 5%;
+      font-size: 180%;
+      color: #f2ce00;
+      margin-bottom: 5%;
+    }
+  
+    .processador p {
+      padding-left: 25%;
+      margin-right: 30%;
+      font-size: 100%;
+      line-height: 30px;
+      background-color: #0000005f;
+      font-weight: 600;
+      padding-right: 3%;
+      padding-bottom: 5%;
+      color: #fff8f8;
+  
+    }
+  
+    .bateria {
+      border-top: 1px solid #747474;
+      margin-top: 0px;
+  
+  
+  
+    }
+  
+    .bateria h2 {
+  
+      font-size: 150%;
+  
+    }
+  
+    .bateria p {
+      font-size: 120%;
+      padding-left: 3%;
+      padding-right: 50%;
+      line-height: 130%;
+      margin-top: 5%;
+    }
+  
+  
+    .bateria .batery {
+      margin-left: 70%;
+      width: 40%;
+      margin-top: -56%;
+      height: 120%;
+    }
+  
+    .final-saibamais {
+      margin-top: 9%;
+      font-family: Helvetica, Helvetica, Arial, sans-serif;
+      color: #000000;
+  
+    }
+  
+    .final-saibamais p {
+  
+      font-size: 100%;
+  
+  
+    }
+  
+    .final-saibamais h2 {
+      font-size: 200%;
+    }
+  
+    .final-saibamais a {
+      margin-left: 35%;
+      font-size: 99%;
+    }
+  
+    main h2 {
+      margin-top: 5%;
+    }
+  
+    form .input-form[type="submit"] {
+      margin-top: 10%;
+    }
+  
+    .pag3-body {
+      background-size: 100% 400%;
+      background-position: 0% -10%;
+    }
+  
+    .img-pag3 {
+      width: 30%;
+      height: 5%;
+      margin-left: 10%;
+  
+    }
+  
+    .pag4-body {
+      background-size: 80%;
+      background-position: 20% 30%;
+    }
+  
+    .pag4-img-1 {
+      margin-left: -1%;
+      width: 60%;
+      height: 50%;
+    }
+  
+    .pag4-img-2 {
+      margin-top: 10%;
+      width: 50%;
+      margin-left: 50%;
+    }
+  
+    .pag4-img-3 {
+      width: 50%;
+      height: 10%;
+      margin-top: 70%;
+    }
+  
+    .p-pag4 {
+      margin-left: 5%;
+      font-size: 20px;
+      padding-top: -10%;
+      margin-bottom: 5%;
+  
+    }
+  
+    .pag5-body {
+  
+      background-size: 100% 150%;
+      margin-top: 150%;
+  
+    }
+  
+    .button-pag5 {
+      margin-top: -50%;
+      margin-left: 45%;
+      padding-right: 6%;
+      padding-top: 5%;
+      background-color: #d900f1;
+  
+      display: inline;
+    }
+  
+    .pag5-img {
+      padding-right: 10%;
+      padding-top: 40%;
+      width: 45%;
+      height: 50%;
+    }
+  
+    .pag6-body {
+  
+      background-size: 100% 120%;
+      background-position: 0% -120%;
+      background-color: #0089da;
+  
+    }
+  
+    .p2-pag6 {
+      padding-top: 25%;
+      margin-left: 46%;
+      font-size: 150%;
+  
+    }
+  
+    .p-pag6 {
+      margin-top: 50%;
+      margin-left: 40%;
+      font-size: 150%;
+  
+    }
+  
+    .img-pag6 {
+      margin-left: 60%;
+      width: 50%;
+      height: 30%;
+      margin-top: -10%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width: 321px) and (max-width: 768px) {}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {}
+  
+  @media screen and (min-width: 1025px) and (max-width: 1600px) {}
